@@ -43,7 +43,7 @@ au FocusGained,BufEnter * checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
+let mapleader = " "
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -209,6 +209,9 @@ map <space> /
 map <C-space> ?
 
 " Disable highlight when <leader><cr> is pressed
+set noerrorbells
+set vb t_vb=
+
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows

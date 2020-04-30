@@ -28,9 +28,13 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
+let g:solarized_termtrans = 1
+let g:solarized_termcolors=256
+let g:airline_theme = 'codedark'
 set background=dark
-colorscheme peaksea
-
+" colorscheme peaksea
+" colorscheme solarized
+colorscheme codedark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
